@@ -7,10 +7,10 @@ void Insertion_Sort(int array[], int nilai)
 {
 	/* Deklarasi variabel loop dan j digunakan dalam proses perulangan.
 	Variabel key digunakan untuk penyisipan nilai*/
-    int loop, key, j;
-    // Looping dari 1 sampai array kurang dari nilai
-    for (loop = 1; loop < nilai; loop++)
-    {
+    	int loop, key, j;
+    	// Looping dari 1 sampai array kurang dari nilai
+    	for (loop = 1; loop < nilai; loop++)
+    	{
     	// Proses penyisipan nilai (Insert nilai)
         key = array[loop];
         j = loop - 1;
@@ -21,7 +21,7 @@ void Insertion_Sort(int array[], int nilai)
             j = j - 1;
         }
         array[j + 1] = key;
-    }
+    	}
 }
  
 // Fungsi Void Cetak_Array untuk menampilkan hasil sorting array
@@ -29,15 +29,15 @@ void Cetak_Array(int array[], int nilai)
 {
 	// Menampilkan kalimat
 	cout << "Hasil Array yang sudah di Sorting adalah : "<<endl;
-    // Deklarasi variabel loop digunakan untuk perulangan
+    	// Deklarasi variabel loop digunakan untuk perulangan
 	int loop;
-    // Looping dari 0 sampai array kurang dari nilai
-    for (loop = 0; loop < nilai; loop++)
-    {
+    	// Looping dari 0 sampai array kurang dari nilai
+    	for (loop = 0; loop < nilai; loop++)
+    	{
     	// Menampilkan hasil sorting array [] (terurut dari kecil ke besar) 
     	cout <<"["<< array[loop]<<"]";
 	}
-    cout << endl;
+    	cout << endl;
 }
 
 // Fungsi Main untuk Mencetak Output Program
@@ -52,10 +52,10 @@ int main()
 	
 	// Input nilai array berdasarkan looping (Input kedua)
 	cout << "Masukan " << nilai << " Nilai Array :"<<endl;
-    int array[nilai];
+    	int array[nilai];
     
-    // Looping dari 0 sampai array kurang dari nilai
-    for(int loop=0; loop < nilai; loop++)
+    	// Looping dari 0 sampai array kurang dari nilai
+    	for(int loop=0; loop < nilai; loop++)
 	{
 		cin >> array[loop];
 	}
